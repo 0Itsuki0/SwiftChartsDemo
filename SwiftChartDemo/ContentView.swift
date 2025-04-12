@@ -103,6 +103,25 @@ struct ContentView: View {
             }
   
             
+            Section {
+                NavigationLink(destination: {
+                    BarMarkAnimationDemo()
+                        .navigationTitle("Animatable Bar Mark")
+                }, label: {
+                    Text("Animatable Bar Mark")
+                })
+
+                NavigationLink(destination: {
+                    LineMarkAnimationDemo()
+                        .navigationTitle("Animatable Line Mark")
+                }, label: {
+                    Text("Animatable Line Mark")
+                })
+
+            } header: {
+                Text("Chart Animation")
+            }
+            
             
         }
         .navigationTitle("Swift Charts Demo")

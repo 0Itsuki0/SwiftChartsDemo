@@ -9,13 +9,13 @@
 import SwiftUI
 import Charts
 
-enum BarCategory: String {
+private enum BarCategory: String {
     case a
     case b
     case c
 }
 
-enum SubCategory: String {
+private enum SubCategory: String {
     case x
     case y
     case z
@@ -32,14 +32,14 @@ enum SubCategory: String {
     }
 }
 
-struct BarMarkData: Identifiable {
+private struct BarMarkData: Identifiable {
     var id: UUID = UUID()
     var value: Double
     var category: BarCategory
     var subCategory: SubCategory
 }
 
-struct RangeBarMarkData: Identifiable {
+private struct RangeBarMarkData: Identifiable {
     var id: UUID = UUID()
     var start: Double
     var end: Double

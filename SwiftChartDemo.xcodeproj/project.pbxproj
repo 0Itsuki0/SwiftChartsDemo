@@ -17,6 +17,8 @@
 		988325092D6AB6E300849731 /* basicMarkDemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basicMarkDemo.png; sourceTree = "<group>"; };
 		988325342D6ADD8700849731 /* stylingDemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stylingDemo.png; sourceTree = "<group>"; };
 		98874A232D69527700E72AF1 /* SwiftChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		988784932DAA3756009E1976 /* lineAnimationDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lineAnimationDemo.gif; sourceTree = "<group>"; };
+		988784942DAA375C009E1976 /* barAnimationDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = barAnimationDemo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +47,8 @@
 				988325092D6AB6E300849731 /* basicMarkDemo.png */,
 				988325342D6ADD8700849731 /* stylingDemo.png */,
 				9873A75F2D72B78500DA9E79 /* interactiveChartDemo.gif */,
+				988784942DAA375C009E1976 /* barAnimationDemo.gif */,
+				988784932DAA3756009E1976 /* lineAnimationDemo.gif */,
 				988325072D6AB67D00849731 /* README.md */,
 				98874A252D69527700E72AF1 /* SwiftChartDemo */,
 				98874A242D69527700E72AF1 /* Products */,

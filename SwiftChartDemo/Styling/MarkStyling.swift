@@ -39,193 +39,193 @@ struct MarkStylingDemo: View {
             Spacer()
                 .frame(height: 24)
             
-//            Text("foregroundStyle(_:)")
-//                
-//            Chart {
-//                ForEach(barDataList) { data in
-//                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
-//                        .foregroundStyle(
-//                            LinearGradient(gradient: Gradient(colors: [.red, .yellow]), startPoint: .top, endPoint: .bottom))
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            Text("alignsMarkStylesWithPlotArea(_:)")
-//                
-//            Chart {
-//                ForEach(barDataList) { data in
-//                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
-//                        .foregroundStyle(
-//                            LinearGradient(gradient: Gradient(colors: [.red, .yellow]), startPoint: .top, endPoint: .bottom))
-//                        .alignsMarkStylesWithPlotArea()
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//
-//            
-//            Spacer()
-//                .frame(height: 48)
-//            
-//            Text("foregroundStyle(by:)")
-//                
-//            Chart {
-//                ForEach(pointDataList) { data in
-//                    
-//                    PointMark(x: .value("", data.weight), y: .value("", data.height))
-//                        .foregroundStyle(by: .value("", data.category.rawValue))
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            Spacer()
-//                .frame(height: 48)
-//            
-//            Text("symbol(_:)")
-//            Chart {
-//                ForEach(pointDataList) { data in
-//                    PointMark(x: .value("", data.weight), y: .value("", data.height))
-//                        .symbol(.circle.strokeBorder(style: StrokeStyle(lineWidth: 1, dash: [2])))
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            Spacer()
-//                .frame(height: 48)
-//            
-//            Text("symbol(symbol:)")
-//            Chart {
-//                ForEach(pointDataList) { data in
-//                    PointMark(x: .value("", data.weight), y: .value("", data.height))
-//                        .symbol(symbol: {
-//                            Image(systemName: "heart.fill")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 16)
-//                                .foregroundStyle(.red)
-//                        })
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            Spacer()
-//                .frame(height: 48)
-//
-//            
-//            Text("symbol(by:)")
-//                
-//            Chart {
-//                ForEach(pointDataList) { data in
-//                    PointMark(x: .value("", data.weight), y: .value("", data.height))
-//                        .symbol(by: .value("", data.category.rawValue))
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            Spacer()
-//                .frame(height: 48)
-//            
-//            Text("symbolSize(by:)")
-//                
-//            Chart {
-//                ForEach(pointDataList) { data in
-//                    PointMark(x: .value("", data.weight), y: .value("", data.height))
-//                        .symbolSize(by: .value("", data.category.rawValue))
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//
-//            
-//            Spacer()
-//                .frame(height: 48)
-//            
-//            Text("lineStyle(by:)")
-//                
-//            Chart {
-//                ForEach(lineDataList) { data in
-//                    LineMark(x: .value("", data.weight), y: .value("", data.height))
-//                        .lineStyle(by: .value("", data.category.rawValue))
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            Spacer()
-//                .frame(height: 48)
-//            
-//            Text("interpolationMethod(_:)")
-//                
-//            Chart {
-//                ForEach(lineDataList.filter({$0.category == .b})) { data in
-//                        LineMark(x: .value("", data.weight), y: .value("", data.height))
-//                            .interpolationMethod(.stepCenter)
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            Spacer()
-//                .frame(height: 48)
-//
-//            
-//            
-//            Text("cornerRadius(by:)")
-//                
-//            Chart {
-//                ForEach(barDataList) { data in
-//                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
-//                        .cornerRadius(16, style: .continuous)
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//            
-//            
-//            Spacer()
-//                .frame(height: 48)
-//            
-//            Text("opacity(_:)")
-//                
-//            Chart {
-//                ForEach(barDataList) { data in
-//                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
-//                        .opacity(data.category == .a ? 1 : 0.2)
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
-//
-//           
-//            
-//            
-//            Spacer()
-//                .frame(height: 48)
-//
-//            
-//            Text("mask(content:)")
-//            Chart {
-//                ForEach(barDataList) { data in
-//                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
-//                        .mask(content: {
-//                            if data.category == .a {
-//                                RectangleMark()
-//                                    .foregroundStyle(Color.black.opacity(0.5))
-//                                RectangleMark(xStart: 30, xEnd: 70)
-//                            } else {
-//                                RectangleMark()
-//                                    .foregroundStyle(Color.black.opacity(0.5))
-//                            }
-//                        })
-//                }
-//            }
-//            .frame(height: 200)
-//            .padding(.horizontal, 48)
+            Text("foregroundStyle(_:)")
+                
+            Chart {
+                ForEach(barDataList) { data in
+                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
+                        .foregroundStyle(
+                            LinearGradient(gradient: Gradient(colors: [.red, .yellow]), startPoint: .top, endPoint: .bottom))
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            Text("alignsMarkStylesWithPlotArea(_:)")
+                
+            Chart {
+                ForEach(barDataList) { data in
+                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
+                        .foregroundStyle(
+                            LinearGradient(gradient: Gradient(colors: [.red, .yellow]), startPoint: .top, endPoint: .bottom))
+                        .alignsMarkStylesWithPlotArea()
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+
+            
+            Spacer()
+                .frame(height: 48)
+            
+            Text("foregroundStyle(by:)")
+                
+            Chart {
+                ForEach(pointDataList) { data in
+                    
+                    PointMark(x: .value("", data.weight), y: .value("", data.height))
+                        .foregroundStyle(by: .value("", data.category.rawValue))
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            Spacer()
+                .frame(height: 48)
+            
+            Text("symbol(_:)")
+            Chart {
+                ForEach(pointDataList) { data in
+                    PointMark(x: .value("", data.weight), y: .value("", data.height))
+                        .symbol(.circle.strokeBorder(style: StrokeStyle(lineWidth: 1, dash: [2])))
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            Spacer()
+                .frame(height: 48)
+            
+            Text("symbol(symbol:)")
+            Chart {
+                ForEach(pointDataList) { data in
+                    PointMark(x: .value("", data.weight), y: .value("", data.height))
+                        .symbol(symbol: {
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 16)
+                                .foregroundStyle(.red)
+                        })
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            Spacer()
+                .frame(height: 48)
+
+            
+            Text("symbol(by:)")
+                
+            Chart {
+                ForEach(pointDataList) { data in
+                    PointMark(x: .value("", data.weight), y: .value("", data.height))
+                        .symbol(by: .value("", data.category.rawValue))
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            Spacer()
+                .frame(height: 48)
+            
+            Text("symbolSize(by:)")
+                
+            Chart {
+                ForEach(pointDataList) { data in
+                    PointMark(x: .value("", data.weight), y: .value("", data.height))
+                        .symbolSize(by: .value("", data.category.rawValue))
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+
+            
+            Spacer()
+                .frame(height: 48)
+            
+            Text("lineStyle(by:)")
+                
+            Chart {
+                ForEach(lineDataList) { data in
+                    LineMark(x: .value("", data.weight), y: .value("", data.height))
+                        .lineStyle(by: .value("", data.category.rawValue))
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            Spacer()
+                .frame(height: 48)
+            
+            Text("interpolationMethod(_:)")
+                
+            Chart {
+                ForEach(lineDataList.filter({$0.category == .b})) { data in
+                        LineMark(x: .value("", data.weight), y: .value("", data.height))
+                            .interpolationMethod(.stepCenter)
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            Spacer()
+                .frame(height: 48)
+
+            
+            
+            Text("cornerRadius(by:)")
+                
+            Chart {
+                ForEach(barDataList) { data in
+                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
+                        .cornerRadius(16, style: .continuous)
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+            
+            
+            Spacer()
+                .frame(height: 48)
+            
+            Text("opacity(_:)")
+                
+            Chart {
+                ForEach(barDataList) { data in
+                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
+                        .opacity(data.category == .a ? 1 : 0.2)
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
+
+           
+            
+            
+            Spacer()
+                .frame(height: 48)
+
+            
+            Text("mask(content:)")
+            Chart {
+                ForEach(barDataList) { data in
+                    BarMark(x: .value("", data.category.rawValue), y: .value("", data.height))
+                        .mask(content: {
+                            if data.category == .a {
+                                RectangleMark()
+                                    .foregroundStyle(Color.black.opacity(0.5))
+                                RectangleMark(xStart: 30, xEnd: 70)
+                            } else {
+                                RectangleMark()
+                                    .foregroundStyle(Color.black.opacity(0.5))
+                            }
+                        })
+                }
+            }
+            .frame(height: 200)
+            .padding(.horizontal, 48)
             
             Spacer()
                 .frame(height: 48)

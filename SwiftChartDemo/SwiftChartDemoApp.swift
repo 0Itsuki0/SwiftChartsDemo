@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftChartDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LineMarkAnimationDemo()
         }
     }
 }

@@ -8,12 +8,12 @@
 import SwiftUI
 import Charts
 
-enum LineMarkDataCategory: String {
+private enum LineMarkDataCategory: String {
     case a
     case b
 }
 
-struct LineMarkData: Identifiable {
+private struct LineMarkData: Identifiable {
     var id: UUID = UUID()
     var value: Double
     var date: Date
